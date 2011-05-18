@@ -1,0 +1,368 @@
+body, input, textarea { font: normal 12px/15px Arial, Helvetica, sans-serif; }
+a:link, a:visited, a:hover, a:active, a:focus { color: #3169a8; }
+a:hover { text-decoration: underline; }
+hr { 
+    border: 0 none;
+    border-top: 1px solid #dedede;
+    clear: both;
+    height: 1px;
+    margin: 18px 0 17px 0;
+}
+
+/* STANDARD MARGIN/PADDING */
+.mb-sm { margin-bottom: 18px; }
+.mb-med { margin-bottom: 36px; }
+.mb-lg { margin-bottom: 50px; }
+
+/* ---HEADERS/BODY TEXT--- */
+.fnt-header-a { font-size: 24px; }
+.fnt-header-b { font-size: 20px; }
+.fnt-header-c { font-size: 18px; }
+.fnt-header-d, .fnt-link-a { font-size: 14px; }
+.fnt-body-a, .fnt-link-b { font-size: 12px; }
+.fnt-product-desc { font-size: 11px; line-height: 15px; }
+.h1 { font: normal 24px MiloSerifOffcMedium, Georgia, serif; }
+.h2 { font: normal 20px MiloSerifOffcMedium, Georgia, serif; }
+.h3 { font: normal 18px MiloSerifOffcMedium, Georgia, serif; }
+.h4 { font: normal 14px MiloSerifOffcMedium, Georgia, serif; }
+
+/* ---FONTS--- */
+.milo { 
+    font-weight: normal;
+    font-family: MiloSerifOffcMedium, Georgia, serif;
+}
+em.milo, i.milo, .milo-ital, .milo em, .milo i {
+    font-weight: normal;
+    font-family: MiloSerifOffcMediumItalic, Georgia, serif;
+}
+.arial { font-family: Arial, Helvetica, sans-serif; }
+
+/* ---COLORS--- */
+/*.black-hdr { color: #000000; }*/
+/*.black-copy { color: #222222; }*/
+/*.gray-back { background-color: #f5f4ef; }*/
+/*.blue { color: #3169a8; }*/
+/*.green-dark { color: #295a34; }*/
+/*.green-light { color: #4a8b57; }*/
+/*.orange { color: #d9652f; }*/
+/*.red { color: #cc1d01; }*/
+
+/* ---FIXES--- */
+.box:before,
+.box:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.box:after { clear: both; }
+.box { zoom: 1; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+/* ---PODS (globally defined box styles)--- */
+/* MAIN POD */
+.pod-main {
+    position: relative;
+    width: 100%;
+}
+.pod-main-header {
+    clear: both;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 0 18px 0;
+    position: relative;
+}
+.pod-main-header h3 { 
+    color: #000000;
+    display: inline;
+    font-family: MiloSerifOffcMedium, Georgia, serif;
+    font-size: 24px;
+}
+.pod-main-content {
+    background: url("http://wwwqa.barnesandnoble.com/gridWork/flipper/flipper/img/bg-body.png") repeat-x scroll 0 0 transparent;
+    border-bottom: 1px solid #DBDBDB;
+    border-top: 1px solid #DBDBDB;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+}
+.pod-main-content-rt {
+    background: url("http://wwwqa.barnesandnoble.com/gridWork/img/module-body-bg-end.png") no-repeat scroll 0 0 transparent;
+    height: 17px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 202px;
+}
+/* MORE POD */
+.pod-more { 
+    /* margin: 0 0 40px 0; */
+    position: relative;
+    width: 100%; 
+}
+.pod-more-header { 
+    background: transparent url(http://wwwqa.barnesandnoble.com/gridWork/img/hdr_hashlines.gif) repeat-x scroll 0 0;
+    height: 9px;
+    position: relative;
+    width: 100%;
+}
+.gateway .pod-more-header { text-align: center; }
+.pod-more-header h3 {
+    background-color: white;
+    color: #000000;
+    display: inline;
+    font: bold 14px/14px Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    padding: 0 10px;
+    position: relative;
+    top: -4px;
+}
+.gateway .pod-more-header h3 {
+    font: normal 18px/18px MiloSerifOffcMedium, Georgia, serif;
+    margin-left: 0;
+    top: -6px;
+}
+.gateway .pod-more-header h3 em { font-family: MiloSerifOffcMediumItalic, Georgia, serif; }
+.pod-more-content { 
+    border: 1px solid #cfccc4; 
+    border-top: none; 
+    padding: 18px;
+}
+/* FILTER POD */
+.pod-filter {
+    border: 1px solid #cfccc4; 
+    overflow: visible;
+    padding: 1px;
+    position: relative;
+    width: 100%;
+}
+.pod-filter-hdr { 
+    background-color: #f5f4e5; 
+    border-bottom: 1px solid #dcdacd; 
+    padding: 5px 0 4px 10px;
+}
+.pod-filter-content { padding: 10px; }
+.pod-filter-shadow-top { 
+    background: transparent url() no-repeat 0 0;
+    height: 100%;
+    position: absolute;
+    right: -21px;
+    top: 0;
+    width: 20px;
+}
+.pod-filter-shadow {
+    background: transparent url(http://wwwqa.barnesandnoble.com/gridWork/img/side_shadow.png) repeat-y 0 0;
+    height: 100%;
+    position: absolute;
+    right: -21px;
+    top: 0;
+    width: 20px;
+}
+
+/*
+    YUI Autocompletes Dropdowna
+*/
+.yui3-aclist-content {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, .2);
+        -moz-box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, .2);
+        -webkit-box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, .2);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px;
+}
+
+.yui3-aclist-content .yui3-aclist-item {
+    color: #000000;
+    font-weight: bold;
+    height: 16px;
+    line-height: 16px;
+    margin: 4px 0px;
+    padding-left: 12px;
+}
+
+.yui3-aclist-content .yui3-aclist-item-active,
+.yui3-aclist-content .yui3-aclist-item-hover {
+    background-color: #EBE9E1;
+}
+
+.yui3-aclist-content .yui3-aclist-item .yui3-highlight {
+    font-weight: normal;
+}
+
+/* --- BUTTON SPRITE (sprite_btns.png) --- */
+/* Includes Branded, Primary, Secondary, Secondary Short, 
+Tertiary, Tertiary Short buttons and all user states */
+button, button:after,
+.button, .button:after {
+    background-image: url(../../images/widgets/sprite_btns.png);
+    box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        -ms-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+}
+
+button, .button {
+    background-repeat: no-repeat;
+    border-width: 0px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: MiloSerifOffcMedium, Georgia;
+    font-size: 18px;
+    font-weight: normal;
+    height: 22px;
+    line-height: 24px;
+    margin: 0;
+    overflow: visible;
+    outline: 0;
+    padding: 8px 16px;
+    position: relative;
+    vertical-align: baseline; //vertical-align: middle;
+    width: auto;
+}
+
+a.button {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+button:after, .button:after {
+    bottom: 0;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    width: 7px;
+}
+
+    /* a surprising number of Firefox hacks */
+    button::-moz-focus-inner, *.button::-moz-focus-inner {
+        border: 0;
+        padding: 1px 0 0 0;
+        margin: 0;
+    }
+    button:-moz-locale-dir(ltr):after {
+        bottom: 10px; /*bottom: -moz-calc(11px);*/ 
+        right: 16px;
+    }
+    
+    /* and a few for IE7 */
+    input[type=submit].button {
+        //margin-left: -2px;
+    }
+    
+    button, input[type=submit].button {
+        //height: 38px;
+    }
+
+button.small, .button.small {
+    font-size: 14px;
+    margin-top: 0 !important;
+    padding: 1px 8px 3px 8px;
+    text-transform: none;
+}
+
+    button.small:-moz-locale-dir(ltr):after {
+        bottom: 5px; bottom: -moz-calc(6px);
+        right: 7px;
+    }
+    
+    button.small, input[type=submit].button.small {
+        //height: 26px;
+        //margin-top: -1px !important;
+    }
+
+button.disabled, .button.disabled,
+button[disabled], *[disabled].button {
+    background-image: none !important;
+    background: #CDCECE !important;
+    border: 1px solid #AAAAAA !important;
+    cursor: default !important;
+    color: #FFF !important;
+    padding: 7px 15px !important;
+    text-shadow: none !important;
+}
+
+button.disabled:after, .button.disabled:after,
+button[disabled]:after, *[disabled].button:after {
+    display: none !important;   
+}
+
+button.branded, .button.branded {background-position: left 0;}
+button.branded:hover, .button.branded:hover {background-position: left -39px;}
+button.branded:active, .button.branded:active {background-position: left -78px;}
+button.branded:after, .button.branded:after {background-position: right 0;}
+button.branded:hover:after, .button.branded:hover:after {background-position: right -39px;}
+button.branded:active:after, .button.branded:active:after {background-position: right -78px;}
+
+button.primary, .button.primary {background-position: left -131px;}
+button.primary:hover, .button.primary:hover {background-position: left -170px;}
+button.primary:active, .button.primary:active {background-position: left -209px;}
+button.primary:after, .button.primary:after {background-position: right -131px;}
+button.primary:hover:after, .button.primary:hover:after {background-position: right -170px;}
+button.primary:active:after, .button.primary:active:after {background-position: right -209px;}
+
+button.secondary, .button.secondary {
+    background-position: left -259px;
+    color: #3169A8;
+}
+button.secondary:hover, .button.secondary:hover {
+    background-position: left -298px;
+    color: #FFFFFF;
+}
+button.secondary:active, .button.secondary:active {
+    background-position: left -337px;
+    color: #FFFFFF;
+}
+button.secondary:after, .button.secondary:after {background-position: right -259px;}
+button.secondary:hover:after, .button.secondary:hover:after {background-position: right -298px;}
+button.secondary:active:after, .button.secondary:active:after {background-position: right -337px;}
+input[type=submit].button.secondary {
+    border-right: 1px solid #A5A299;
+    padding-right: 15px;
+}
+
+button.secondary.small, .button.secondary.small {background-position: left -519px;}
+button.secondary.small:hover, .button.secondary.small:hover {background-position: left -546px;}
+button.secondary.small:active, .button.secondary.small:active {background-position: left -573px;}
+button.secondary.small:after, .button.secondary.small:after {background-position: right -519px;}
+button.secondary.small:hover:after, .button.secondary.small:hover:after {background-position: right -546px;}
+button.secondary.small:active:after, .button.secondary.small:active:after {background-position: right -573px;}
+input[type=submit].button.secondary.small {padding-right: 7px;}
+
+button.tertiary, .button.tertiary {background-position: left -387px;}
+button.tertiary:hover, .button.tertiary:hover {background-position: left -426px;}
+button.tertiary:active, .button.tertiary:active {background-position: left -465px;}
+button.tertiary:after, .button.tertiary:after {background-position: right -387px;}
+button.tertiary:hover:after, .button.tertiary:hover:after {background-position: right -426px;}
+button.tertiary:active:after, .button.tertiary:active:after {background-position: right -465px;}
+
+button.tertiary.small, .button.tertiary.small {background-position: left -612px;}
+button.tertiary.small:hover, .button.tertiary.small:hover {background-position: left -639px;}
+button.tertiary.small:active, .button.tertiary.small:active {background-position: left -666px;}
+button.tertiary.small:after, .button.tertiary.small:after {background-position: right -612px;}
+button.tertiary.small:hover:after, .button.tertiary.small:hover:after {background-position: right -639px;}
+button.tertiary.small:active:after, .button.tertiary.small:active:after {background-position: right -666px}
+
+button .caret,
+.button .caret { /* for the caret symbol */
+    -moz-transform: rotate(90deg);
+    -moz-transform-origin: center center;
+    -webkit-transform: rotate(90deg);
+    -webkit-transform-origin: center center;
+    display: inline-block;
+    height: 15px;
+    line-height: 15px;
+    margin: 0 -15px 0 15px;
+    position: relative;
+    text-align: center;
+    top: -3px;
+    vertical-align: middle;
+    width: 15px;
+    writing-mode: tb-rl;
+}
+
+/* progressive enhancement */
+.yui3-js-enabled .hide-if-js {
+    display: none;
+}

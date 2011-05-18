@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en"> 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Animist</title>
+		<link type="text/css" href="assets/css/reset.css" rel="stylesheet"/>
+		<link type="text/css" href="assets/css/story.css" rel="stylesheet"/>
+		<script type="text/javascript" src="js/jquery/jquery-1.6.min.js"></script>
+		<script type="text/javascript" src="js/animist.js"></script>
+		<!--<script type="text/javascript" src="js/animist-backup.js"></script>-->
+	</head>
+	<body>
+		<div class="protagonist"></div>
+		<div class="antagonist"></div>
+
+		<script type="text/javascript">
+			Animist('.protagonist').addSprite([
+			{
+				name : 'walk',
+				fps : 12,
+				level : 10,
+				frames : 16//,
+//				duration : {
+//					frames : 10
+					//sequences : 2
+//					seconds : 3
+//				}
+			},
+			{
+				name : 'run',
+				fps : 24,
+				frames : 16,
+				duration : {
+					//frames : 10
+					//sequences : 2
+					seconds : 3
+				}
+			}
+			]);
+
+			Animist('.protagonist, .antagonist').addSprite(
+			{
+				name : 'sprint',
+				fps : 24,
+				frames : 16,
+				duration : {
+//					frames : 10
+					sequences : 2
+//					seconds : 3
+				}
+			});
+			Animist('.antagonist').addSprite([
+			{
+//				name : 'run',
+				fps : 12,
+				frames : 16,
+				duration : {
+					frames : 10
+					//sequences : 2
+//					seconds : 3
+				}
+			},
+			{
+				
+				fps : 24,
+				frames : 16,
+				duration : {
+					frames : 10
+					//sequences : 2
+					//seconds : 3
+				}
+			}
+			]);
+			Animist('.protagonist, .antagonist').addSprite();
+			Animist('.protagonist, .antagonist').addSprite('s');
+
+
+			$(function(){
+				Animist('.protagonist').start();
+				Animist('.protagonist').start('run walk skip');
+//				Animist('.antagonist').start('sprint');
+//				Animist('.antagonist').start('run sprint');
+			});
+		</script>
+
+
+	</body>
+</html>
